@@ -100,13 +100,11 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    vertical-align: -0.10em;
     fill:currentColor;}
 .social-ikon-tel {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    vertical-align: -0.15em;
     fill:currentColor;}
 .header-list-contacts {
     display: flex;
@@ -125,10 +123,11 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     url(../images/bg-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1600;
+    width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-   }
+    margin-left: auto;
+    margin-right: auto;}
 .banner-title { 
     font-weight: 900;
     font-size: 44px;
@@ -179,38 +178,24 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     align-items: flex-start;}
 .features-list-item {
     max-width: 270px;
-height: 120px;}
+align-items: center;
+justify-items: center;
+}
 .features-list-item:not(:first-child)  {
     margin-left: 30px;}
-.features-ikon {
-   padding-top: 25px;
-   padding-bottom: 25px;
-   padding-right: 100px;}
-.icon-antenna {height: 120px;
-    align-items: center;
-    justify-items: center;
-    background-color: var(--team-background-color);
-   }
-.icon-clock {height: 120px;
-    align-items: center;
-    justify-items: center;
-    background-color: var(--team-background-color);}
-.icon-diagram {height: 120px;
-    align-items: center;
-    justify-items: center;
-    background-color: var(--team-background-color);}
-.icon-astronaut {
-    height: 120px;
-    align-items: center;
-    justify-items: center;
-    background-color: var(--team-background-color);}   
+.features-icon {
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--team-background-color);
+   margin-bottom: 30px;}
 .features-list-name {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 30px;
     margin-bottom: 10px;}
 .features-list-description{
     font-size: 14px;
@@ -255,21 +240,18 @@ height: 120px;}
     display: flex;
     justify-content: center;
     }
-.team-members .team-social {
-    border-radius: 50%;
-    align-items: center;}
 .team-members .team-social:not(:last-child) {
     margin-right: 10px;
 }
 .team-members .social-link{
     width: 44px;
     height: 44px; 
-display: block;
-color: var(--text-color-2);}
+    border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: var(--social-icon);}
 .team-members .social-icon{
-    width: 44px;
-    height: 44px;
-    padding: 12px 12px 12px 12px;
     fill: currentColor;}
 .team-members .social-link:hover, .team-members .social-link:focus {
     background-color: var(--nav-color);
@@ -313,18 +295,16 @@ padding-left: auto;}
 .client-link{
     width: 170px;
     height: 92px;
-    display: block;
+    display: flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: var(--social-icon);}
 .client-link:hover, .client-link:focus {
     border: 1px solid #2196F3;
     color: var(--nav-color);}
-.client-icon{
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px 16px 32px;
+.client-icon {
     fill: currentColor;}
 /*футер студія */
 .footer {
@@ -384,14 +364,11 @@ margin-left: 10px;}
     height: 44px;
     fill: var(--social-icon-footer);
     align-items: center;
-    display: block;}
+    display: flex;
+justify-content: center;}
 .footer-social-link:hover, .footer-social-link:focus {
     background-color: var(--nav-color);
     border-radius: 50%;}    
-.footer-social-icon {
-    width: 44px;
-    height: 44px;
-    padding: 12px;}
 
 
 /*портфоліо*/
@@ -430,9 +407,10 @@ margin-left: 10px;}
 .portfolio-project-list {
     list-style: none;}
 .portfolio-project-link {
+    display: block;
     text-decoration: none;
     color: var(--text-color)}
-.portfolio-project-list:hover, .portfolio-project-list:focus {
+.portfolio-project-link:hover, .portfolio-project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);}
@@ -471,6 +449,8 @@ margin-left: 10px;}
 .portfolio-about {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;}
